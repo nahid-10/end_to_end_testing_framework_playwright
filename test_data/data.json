@@ -1,0 +1,65 @@
+{
+    "register_valid":{
+        "username":"nahid20",
+        "password":"123456",
+        "confirm_password":"123456"
+    },
+    
+    "register_invalid_duplicate":{
+        "username":"nahid",
+        "password":"12345",
+        "confirm_password":"12345"
+    },
+    "register_invalid_user":{
+        "username":"123!@#11233",
+        "password":"123456",
+        "confirm_password":"123456"
+    },
+    "register_invalid_password_mismatch":{
+        "username":"nahid21",
+        "password":"123456",
+        "confirm_password":"123567"
+    },
+    "register_invalid_short_password":{
+        "username":"nahid21",
+        "password":"12",
+        "confirm_password":"12"
+    },
+
+    "login_valid":{
+        "username":"practice",
+        "password":"SuperSecretPassword!"
+    },
+    "login_invalid_username":{
+        "username":"!@#",
+        "password":"SuperSecretPassword!"
+    },
+
+    "login_invalid_password":{
+        "username":"practice",
+        "password":"!@#"
+    },
+
+    "forget_password_valid":{
+        "email":"nahid@gmail.com"
+    },
+    "forget_password_invalid1":{
+        "email":"nahidgmail.com"
+    },
+    "forget_password_invalid2":{
+        "email":"nahid@gmailcom"
+    },
+    "otp_valid":{
+        "email":"practice@expandtesting.com",
+        "otp":"214365"
+    },
+    "otp_invalid_email_format":{
+        "email":"nahidgmail.com",
+        "otp":"123"
+    },
+    "otp_invalid_otp":{
+        "email":"practice@expandtesting.com",
+        "otp":"2143"
+    }
+
+}
