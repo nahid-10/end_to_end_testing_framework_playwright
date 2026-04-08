@@ -11,6 +11,9 @@ class BasePage:
     def click(self,locator):
         self.page.locator(locator).click()
         
+    def locate(self, locator):
+        return self.page.locator(locator)
+        
     def fill(self,locator,text):
         self.page.locator(locator).fill(text)
     

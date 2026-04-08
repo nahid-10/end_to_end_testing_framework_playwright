@@ -60,6 +60,11 @@
     "otp_invalid_otp":{
         "email":"practice@expandtesting.com",
         "otp":"2143"
+    },
+    "dynamic_table_valid":{
+        "search":"Junior",
+        "value":"10"
     }
+
 
 }
