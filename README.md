@@ -10,7 +10,7 @@ The framework simulates real-world user workflows and demonstrates industry-stan
 
 The goal of this project is to build a robust and maintainable automation framework that covers common UI scenarios such as authentication, form validation, dynamic elements, alerts, file handling, browser interactions, and more.
 
-End-to-End (E2E) testing validates complete user workflows to ensure all components of an application work together correctly in a production-like environment. :contentReference[oaicite:0]{index=0}
+End-to-End (E2E) testing validates complete user workflows to ensure all components of an application work together correctly in a production-like environment.
 
 ---
 
@@ -65,19 +65,18 @@ A well-structured Playwright test suite improves maintainability and helps teams
 ### Alerts Handling
 - JavaScript alerts
 - Notifications
-- Cookie alerts
-- Entry/Exit popups
 
 ### Browser Interaction
 - iFrame handling
 - Multiple windows
-- Geolocation
+- About page
+- Google tracking page
+- Random number page
 
 ### Advanced Scenarios
 - Drag and Drop
 - Infinite scroll
 - Dynamic elements
-- Shadow DOM
 - File download
 - Network validation
 
