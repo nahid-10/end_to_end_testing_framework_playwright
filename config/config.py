@@ -6,7 +6,7 @@ class Config:
     
     browser="chromium"
     
-    headless= False
+    headless= True
     
     timeout=100000
     
