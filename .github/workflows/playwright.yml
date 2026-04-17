@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright Python Tests
 
 on:
   push:
@@ -15,23 +15,26 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
-        node-version: 18
+        python-version: '3.10'
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        pip install -r requirements.txt
 
     - name: Install Playwright browsers
-      run: npx playwright install --with-deps
+      run: |
+        playwright install --with-deps
 
-    - name: Run Playwright tests
-      run: npx playwright test
+    - name: Run tests
+      run: |
+        pytest
 
-    - name: Upload test report
+    - name: Upload report
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: playwright-report
-        path: playwright-report/
+        name: test-results
+        path: .
