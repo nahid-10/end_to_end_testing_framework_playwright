@@ -6,7 +6,7 @@ class ForgetPassword(BasePage):
     #locators for forget password
     email="//input[@id='email']"
     forget_password_button="//button[@class='btn btn-bg btn-primary d-block w-100']"
-    result_message_backend="//div[@id='flash']"
+    result_message_backend="//div[@class='alert alert-danger alert-dismissible fade show']"
     result_message_frontend="//div[@class='ms-1 invalid-feedback']"
     
     def open(self):
