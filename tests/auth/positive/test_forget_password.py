@@ -16,4 +16,4 @@ def test_forget_password(page):
     
     result= forget_password_obj.get_message()
     
-    assert "reset your password" in result
+    assert "Password reset page for Automation Testing Practice" in result

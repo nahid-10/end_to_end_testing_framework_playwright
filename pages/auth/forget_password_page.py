@@ -5,8 +5,8 @@ class ForgetPassword(BasePage):
     
     #locators for forget password
     email="//input[@id='email']"
-    forget_password_button="//button[@class='btn btn-bg btn-primary d-block w-100']"
-    result_message_frontend="//div[@class='ms-1 invalid-feedback']"
+    forget_password_button="//button[@type='submit']"
+    result_message="//h1[.='Password reset page for Automation Testing Practice']"
     
     def open(self):
         self.navigate(f"{Config.base_url}/forgot-password")
@@ -17,4 +17,4 @@ class ForgetPassword(BasePage):
         
     
     def get_message(self):
-        return self.get_text(self.result_message_frontend)
+        return self.get_text(self.result_message)
