@@ -14,6 +14,6 @@ def test_forget_password(page):
     
     forget_password_obj.forget_password_page(email)
     
-    result= forget_password_obj.get_message2()
+    result= forget_password_obj.get_message()
     
     assert "enter a valid email address" in result
