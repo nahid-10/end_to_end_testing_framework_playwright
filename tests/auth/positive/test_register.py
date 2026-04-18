@@ -6,7 +6,7 @@ def test_register(page):
     
     username=data["register_valid"]["username"]
     password=data["register_valid"]["password"]
-    confirm_password=["register_valid"]["confirm_password"]
+    confirm_password=data["register_valid"]["confirm_password"]
     
     register_obj=RegisterPage(page)
     
