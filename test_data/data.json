@@ -42,11 +42,8 @@
     "forget_password_valid":{
         "email":"nahid@gmail.com"
     },
-    "forget_password_invalid1":{
-        "email":"nahidgmail.com"
-    },
-    "forget_password_invalid2":{
-        "email":"nahid@gmailcom"
+    "forget_password_invalid":{
+        "email":"practice@expandtestingcom"
     },
     "otp_valid":{
         "email":"practice@expandtesting.com",

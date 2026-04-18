@@ -6,7 +6,7 @@ def test_forget_password(page):
     
     data=load_json_data("test_data/data.json")
     
-    email=data["forget_password_invalid1"]["email"]
+    email=data["forget_password_invalid"]["email"]
     
     forget_password_obj=ForgetPassword(page)
     
@@ -14,6 +14,6 @@ def test_forget_password(page):
     
     forget_password_obj.forget_password_page(email)
     
-    result= forget_password_obj.get_message()
+    result= forget_password_obj.failed_message()
     
-    assert "enter a valid email address" in result
+    assert "Your email is invalid!" in result
